@@ -16,8 +16,14 @@ brain-gcd:
 brain-progression:
 	node bin/brain-progression.js
 
+brain-prime:
+	node bin/brain-prime.js
+
 publish:
 	npm publish --dry-run
+	chmod +x
+	npm link
 
 lint:
 	npx eslint .
+	npx eslint --fix .
