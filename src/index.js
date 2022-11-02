@@ -1,4 +1,22 @@
-const countRound = 3;
-const randomNumber = (min = 1, max = 20) => Math.floor(Math.random() * (max - min + 1)) + min;
+import readlineSync from 'readline-sync';
 
-export { countRound, randomNumber };
+const gameEngine = (rules, getTaskAndCorrect) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(rules);
+  const countRound = 3;
+  for (let i = 1; i <= countRound; i += 1) {
+    const [task, correct] = getTaskAndCorrect();
+    console.log(`Question: ${task}`);
+    const answer = readlineSync.question('Your answer: ');
+    if (answer === String(correct)) {
+      console.log('Correct!');
+    } else {
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}!`);
+    }
+  }
+  return console.log(`Congratulations, ${name}!`);
+};
+
+export default gameEngine;

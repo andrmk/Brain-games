@@ -21,9 +21,10 @@ brain-prime:
 
 publish:
 	npm publish --dry-run
-	chmod +x
-	npm link
-
+	
 lint:
 	npx eslint .
+
+fix:
 	npx eslint --fix .
+	
