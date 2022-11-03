@@ -15,8 +15,8 @@ const getTaskAndCorrect = () => {
   const progression = getProgression();
   const index = randomNumber(0, 9);
   const correct = progression[index];
-  const task = progression;
-  task[index] = '..';
+  progression[index] = '..';
+  const task = progression.join(' ');
   return [task, correct];
 };
 const gameProgression = () => {
