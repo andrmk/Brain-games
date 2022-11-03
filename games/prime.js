@@ -1,7 +1,7 @@
 import randomNumber from '../src/utils.js';
 import gameEngine from '../src/index.js';
 
-const rules = '"yes" if given number is prime. Otherwise answer "no".';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const prime = (n) => {
   if (n < 2) {
     return false;
