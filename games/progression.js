@@ -1,7 +1,7 @@
 import randomNumber from '../src/utils.js';
 import gameEngine from '../src/index.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const rules = 'What number is missing in the progression?';
 const getProgression = () => {
   const arreyProgression = [];
   const number = randomNumber(1, 100);
