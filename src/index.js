@@ -5,12 +5,12 @@ const gameEngine = (rules, getTaskAndCorrect) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(rules);
-  const countRound = 3;
-  for (let i = 1; i <= countRound; i += 1) {
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
     const [task, correct] = getTaskAndCorrect();
     console.log(`Question: ${task}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === String(correct)) {
+    if (answer === correct) {
       console.log('Correct!');
     } else {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}!`);
