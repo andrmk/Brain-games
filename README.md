@@ -4,12 +4,6 @@
 
 Проект __"игры разума"__ - набор мини-игр, запускаемых из консоли:
 
-1. brain-even
-2. brain-calc
-3. brain-gcd
-4. brain-progression
-5. brain-prime
-
 Требования:
 * Node.js версии 13 и выше
 * Пакетный менеджер npm
@@ -17,3 +11,15 @@
 Запуск:
 * Установка зависимостей: make install
 * Установка игр: npm link
+
+
+1. brain-even
+![brain-even](/source/images/brain-even.png)
+2. brain-calc
+![brain-calc](/source/images/brain-calc.png)
+3. brain-gcd
+![brain-gcd](/source/images/brain-gcd.png)
+4. brain-progression
+![brain-progression](/source/images/brain-progression.png)
+5. brain-prime
+![brain-prime](/source/images/brain-prime.png)
